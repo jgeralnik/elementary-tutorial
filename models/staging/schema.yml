@@ -21,6 +21,16 @@ models:
       - name: payment_id
       - name: payment_method
 
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
   - name: stg_signups
     config:
       tags: ["staging", "PII"]

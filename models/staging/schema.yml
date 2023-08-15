@@ -7,11 +7,29 @@ models:
     columns:
       - name: customer_id
 
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
   - name: stg_orders
     config:
       tags: ["staging", "finance"]
     columns:
       - name: order_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
       - name: status
 
   - name: stg_payments
@@ -19,6 +37,15 @@ models:
       tags: ["staging", "finance"]
     columns:
       - name: payment_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
       - name: payment_method
 
   - name: stg_signups
@@ -26,4 +53,13 @@ models:
       tags: ["staging", "PII"]
     columns:
       - name: signup_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
       - name: customer_email

@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: my_first_dbt_model
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: my_second_dbt_model
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT

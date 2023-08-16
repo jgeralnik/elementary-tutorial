@@ -1,0 +1,98 @@
+version: 2
+models:
+  - name: customers_training
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: payments_training
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: signups_training
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: orders_training
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: payments_validation
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: signups_validation
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: customers_validation
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT
+  - name: orders_validation
+    columns:
+      - name: id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT

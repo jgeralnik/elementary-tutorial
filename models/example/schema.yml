@@ -26,3 +26,11 @@ models:
         tests:
           - unique
           - not_null
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                owner:
+                  - joey.g@elementary-data.com
+                description: Check unique with GPT

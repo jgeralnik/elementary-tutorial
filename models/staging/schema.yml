@@ -7,11 +7,15 @@ models:
     columns:
       - name: customer_id
 
+        tests:
+          - unique: {}
   - name: stg_orders
     config:
       tags: ["staging", "finance"]
     columns:
       - name: order_id
+        tests:
+          - unique: {}
       - name: status
 
   - name: stg_payments
@@ -19,6 +23,8 @@ models:
       tags: ["staging", "finance"]
     columns:
       - name: payment_id
+        tests:
+          - unique: {}
       - name: payment_method
 
   - name: stg_signups
@@ -26,4 +32,6 @@ models:
       tags: ["staging", "PII"]
     columns:
       - name: signup_id
+        tests:
+          - unique: {}
       - name: customer_email

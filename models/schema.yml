@@ -15,6 +15,8 @@ models:
       - name: customer_id
         description: This is a unique identifier for a customer
 
+        tests:
+          - unique: {}
       - name: first_name
         description: Customer's first name. PII.
 
@@ -63,6 +65,8 @@ models:
       - name: order_id
         description: This is a unique identifier for an order
 
+        tests:
+          - unique: {}
       - name: customer_id
         description: Foreign key to the customers table
 
@@ -101,6 +105,8 @@ models:
       - name: order_id
         description: This is a unique identifier for an order
 
+        tests:
+          - unique: {}
       - name: customer_id
         description: Foreign key to the customers table
 

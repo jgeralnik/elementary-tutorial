@@ -18,6 +18,7 @@ models:
                 owner:
                   - joey.g@elementary-data.com
                 description: Check unique with GPT
+          - unique: {}
   - name: my_second_dbt_model
     description: "A starter dbt model"
     columns:
@@ -26,3 +27,4 @@ models:
         tests:
           - unique
           - not_null
+          - unique: {}

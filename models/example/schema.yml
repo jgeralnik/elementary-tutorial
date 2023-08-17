@@ -18,6 +18,18 @@ models:
                 owner:
                   - joey.g@elementary-data.com
                 description: Check unique with GPT
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
   - name: my_second_dbt_model
     description: "A starter dbt model"
     columns:
@@ -26,3 +38,15 @@ models:
         tests:
           - unique
           - not_null
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique

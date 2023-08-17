@@ -7,11 +7,37 @@ models:
     columns:
       - name: customer_id
 
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
   - name: stg_orders
     config:
       tags: ["staging", "finance"]
     columns:
       - name: order_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
       - name: status
 
   - name: stg_payments
@@ -19,6 +45,19 @@ models:
       tags: ["staging", "finance"]
     columns:
       - name: payment_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
       - name: payment_method
 
   - name: stg_signups
@@ -26,4 +65,17 @@ models:
       tags: ["staging", "PII"]
     columns:
       - name: signup_id
+        tests:
+          - unique:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
+          - not_null:
+              config:
+                tags:
+                  - GPT
+              meta:
+                description: This is a primary key so should be unique
       - name: customer_email
